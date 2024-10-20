@@ -6,11 +6,14 @@ body {
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 1rem 0;
 }
 
+.logo{
+   
+    max-width: 150px;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -145,12 +148,12 @@ nav ul li a {
     font-style: italic;
 }
 
-.skills-section {
+.skillssection {
     padding: 50px;
     text-align: center;
 }
 
-.skills-section h2 {
+.skillssection h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -160,7 +163,9 @@ nav ul li a {
     justify-content: center;
     gap: 15px;
 }
-
+.title {
+font-size: large;
+}
 .skill-item {
     background-color: black;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.177);
@@ -217,10 +222,12 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: left;
 }
 
 form input,
 form textarea {
+   justify-content: left;
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -242,44 +249,104 @@ form button:hover {
     background-color: #6072ff;
 }
 
+.heromain{
+    font-size: 40px;
+}
 footer {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
+    position: static;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.footer-logo {
+.footer-content {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
 
-.footer-nav ul {
+.logo {
+    flex: auto;
+    width: 100px;
+    left: 10%;
+}
+
+.footer-links ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
 }
 
-.footer-nav ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
+.footer-links ul li {
+    display: inline;
 }
 
-footer p {
-    text-align: center;
-    width: 100%;
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-bottom {
     margin-top: 20px;
+    text-align: center;
     font-size: 14px;
 }
 
-.logofooter {
-    width: 100px;
-    height: 100px;
+.footer-bottom p {
+    margin: 0;
+}
+/* Container for floating squares */
+.floating-squares {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+/* Adjustments for each square */
+.square1 {
+    transform: rotate(30deg);
+}
+
+.square2 {
+    transform: rotate(0deg)}
+
+.square3 {
+    transform: rotate(-30deg);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* You can adjust the height as needed */
+    height: 100vh; /* This will make it full viewport height */
+}
+
+.video {
+    /* Adjust max-width and max-height as needed */
+    max-width: 80%;
+    max-height: 80vh;
 }
