@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,11 +10,37 @@ header {
     background-color: #333;
     color: white;
     padding: 1rem 0;
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo {
+    padding-left: 30px;
+    max-height: 60px;
+}
+
+.name {
+    font-size: 18px;
+>>>>>>> Stashed changes
 }
 
 nav ul {
     list-style: none;
     display: flex;
+<<<<<<< Updated upstream
     justify-content: center;
     padding: 0;
 }
@@ -34,11 +61,127 @@ section {
 
 h1, h2, h3 {
     margin: 0.5rem 0;
+=======
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.profile-pic img {
+    margin-right: 50px;
+    width: 249px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.177);
+}
+
+.herotext {
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intro .title {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.skillssection {
+    padding: 50px;
+    text-align: center;
+}
+
+.skillssection h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.177);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.portfolio-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-item {
+    padding: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.177);
+    width: 210px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    flex: left;
+    padding: 50px;
+    text-align: left;
+    max-width: 70%;
+    margin: auto;
+>>>>>>> Stashed changes
 }
 
 form {
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
     align-items: center;
 }
 
@@ -70,3 +213,72 @@ footer {
     width: 100%;
     bottom: 0;
 }
+=======
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 5px 8px 05px rgba(0, 0, 0, 0.177);
+    border-radius: 15px;
+}
+
+form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6072ff;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.logofooter {
+    width: 100px;
+    height: 100px;
+}
+>>>>>>> Stashed changes
